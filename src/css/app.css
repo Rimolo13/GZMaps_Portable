@@ -1,17 +1,18 @@
 :root {
-  --main: rgb(#e70000);
-  --text-color: rgb(255, 255, 250);
-  --background-color: rgb(255, 255, 250);
-  --background-second-color: rgb(215, 239, 211);
-  --text-highlight: rgb(250, 170, 0);
-  --text-bar-color: rgb(3, 3, 0);
-  --bar-background-color: rgb(210, 225, 200);
-  --button-color: rgb(6, 110, 90);
-  --button-color-hover: rgb(6, 150, 130);
-  --houses-color: rgb(3, 130, 110);
-  --houses-color-hover: rgb(3, 90, 70);
-  --corridors-color: rgb(55, 95, 75);
-  --basements-color: rgb(3, 105, 85);
+  --main: #008e5e;
+  --white: #fffffa;
+  --black: #030300;
+  --text-color: var(--white);
+  --text-bar-color: var(--black);
+  --background-color: color-mix(in srgb, var(--main) 5%, var(--white));
+  --background-second-color: color-mix(in srgb, var(--main) 30%, var(--white));
+  --bar-background-color: color-mix(in srgb, var(--main) 60%, var(--white));
+  --button-color: color-mix(in srgb, var(--main) 90%, var(--white));
+  --button-color-hover: color-mix(in srgb, var(--main) 70%, var(--white));
+  --houses-color: color-mix(in srgb, var(--main) 75%, var(--white));
+  --houses-color-hover: color-mix(in srgb, var(--main) 89%, var(--white));
+  --corridors-color: color-mix(in srgb, var(--main) 66%, var(--white));
+  --basements-color: color-mix(in srgb, var(--main) 80%, var(--white));
 }
 
 @media (prefers-color-scheme: dark) {
