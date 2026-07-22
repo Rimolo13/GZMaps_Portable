@@ -1,0 +1,23 @@
+{
+  "name": "gzmaps_portable",
+  "version": "1.0.0",
+  "description": "a simple, minimalistic map tool",
+  "homepage": "https://github.com/Rimolo13/GZMaps_Portable#readme",
+  "bugs": {
+    "url": "https://github.com/Rimolo13/GZMaps_Portable/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rimolo13/GZMaps_Portable.git"
+  },
+  "license": "GPL-3.0-only",
+  "author": "Rimolo13",
+  "type": "module",
+  "scripts": {
+    "update": "npx tsc",
+    "dev": "npx tsc --watch"
+  },
+  "dependencies": {
+    "typescript": "^7.0.2"
+  }
+}
