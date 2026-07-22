@@ -1,0 +1,68 @@
+:root {
+  --main: rgb(#e70000);
+  --text-color: rgb(255, 255, 250);
+  --background-color: rgb(255, 255, 250);
+  --background-second-color: rgb(215, 239, 211);
+  --text-highlight: rgb(250, 170, 0);
+  --text-bar-color: rgb(3, 3, 0);
+  --bar-background-color: rgb(210, 225, 200);
+  --button-color: rgb(6, 110, 90);
+  --button-color-hover: rgb(6, 150, 130);
+  --houses-color: rgb(3, 130, 110);
+  --houses-color-hover: rgb(3, 90, 70);
+  --corridors-color: rgb(55, 95, 75);
+  --basements-color: rgb(3, 105, 85);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: rgb(0, 0, 0);
+    --background-second-color: rgb(35, 39, 31);
+    --text-highlight: rgb(230, 150, 0);
+    --text-bar-color: rgb(255, 255, 250);
+    --bar-background-color: rgb(37, 37, 33);
+    --button-color: rgb(6, 70, 50);
+    --button-color-hover: rgb(6, 30, 10);
+    --houses-color: rgb(3, 90, 70);
+    --houses-color-hover: rgb(3, 50, 30);
+    --corridors-color: rgb(30, 70, 50);
+    --basements-color: rgb(3, 75, 55);
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif, Times, serif;
+  color: var(--text-color);
+  font-size: 1.05em;
+  font-weight: bolder;
+  text-align: center;
+  transition: all 0.3s;
+  overflow: hidden;
+  user-select: none;
+}
+
+html,
+body,
+#app,
+#settings {
+  height: 100dvh;
+  width: 100dvw;
+}
+
+body {
+  background: var(--background-color);
+}
+
+.not-displayed {
+  display: none !important;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
