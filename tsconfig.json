@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "rootDir": ".ts",
+    "rootDir": "./ts",
     "outDir": "./src/js",
 
     "module": "esnext",
