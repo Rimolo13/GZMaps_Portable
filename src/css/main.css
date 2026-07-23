@@ -1,0 +1,62 @@
+:root {
+  --main: #005e3e;
+  --white: #fffffa;
+  --black: #030300;
+  --text-color: var(--white);
+  --text-second-color: var(--black);
+  --background-color: color-mix(in srgb, var(--main) 5%, var(--white));
+  --background-second-color: color-mix(in srgb, var(--main) 35%, var(--white));
+  --background-third-color: color-mix(in srgb, var(--main) 65%, var(--white));
+  --interactive-color: color-mix(in srgb, var(--main) 85%, var(--white));
+  --interactive-color-hover: color-mix(in srgb, var(--main) 85%, var(--black));
+  --contrast-color: color-mix(in srgb, var(--main) 95%, var(--black));
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-second-color: var(--white);
+    --background-color: color-mix(in srgb, var(--main) 5%, var(--black));
+    --background-second-color: color-mix(in srgb, var(--main) 35%, var(--black));
+    --background-third-color: color-mix(in srgb, var(--main) 65%, var(--black));
+    --interactive-color: color-mix(in srgb, var(--main) 85%, var(--black));
+    --interactive-color-hover: color-mix(in srgb, var(--main) 85%, var(--white));
+    --contrast-color: color-mix(in srgb, var(--main) 95%, var(--white));
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif, Times, serif;
+  color: var(--text-color);
+  font-size: clamp(16px, 2vw, 32px);
+  font-weight: bolder;
+  text-align: center;
+  transition: all 0.3s;
+  overflow: hidden;
+  user-select: none;
+}
+
+html,
+body,
+#app,
+#settings {
+  height: 100dvh;
+  width: 100dvw;
+}
+
+body {
+  background: var(--background-color);
+}
+
+.not-displayed {
+  display: none !important;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
