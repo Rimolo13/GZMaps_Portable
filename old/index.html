@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GZMaps - Gesamte Karte</title>
+    <meta name="description" content="Eine Karte von einer Firma." />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" href="./src/icon/favicon.svg">
+    <link rel="canonical" href="https://rimolo13.github.io/GZMaps-Portable/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="GZMaps" />
+    <meta property="og:description" content="Eine Karte von einer Firma." />
+    <meta
+      property="og:image"
+      content="https://rimolo13.github.io/GZMaps-Portable/src/icon/favicon.png"
+    />
+    <meta
+      property="og:url"
+      content="https://rimolo13.github.io/GZMaps-Portable/"
+    />
+    <meta property="og:site_name" content="GZMaps" />
+    <link rel="stylesheet" href="./src/css/main.css">
+    <script type="module" src="./src/js/main.js"></script>
+  </head>
+  <body>
+    <div id="settings">
+      <div class="settings-felds" id="settings-mode">
+        <p class="subheading">Betriebsmodus wählen:</p>
+        <p class="select settings-margin-down" id="setting-server">Server</p>
+        <p class="select" id="setting-local">Lokal</p>
+      </div>
+      <div class="settings-felds not-displayed" id="settings-server">
+        <p class="subheading">Server Link:</p>
+        <input
+          type="text"
+          placeholder="z.B. https:\\GZMaps.com\"
+          class="input settings-input settings-margin-down"
+          id="setting-input"
+        />
+      </div>
+      <div class="settings-felds not-displayed" id="settings-user">
+        <p class="subheading">Rolle wählen:</p>
+        <p class="select settings-margin-down" id="setting-admin">Admin</p>
+        <p class="select" id="setting-user">Benutzer</p>
+      </div>
+      <div class="settings-button-feld">
+        <p class="button settings-buttons" id="settings-button">weiter</p>
+      </div>
+    </div>
+    <div id="app">
+      <header class="bar">
+        <p class="bar-text heading" id="header">GZMaps - Gesamte Karte</p>
+      </header>
+      <main>
+        <div class="hidden" id="edit-bar">
+          <p class="button" id="full-map-back">Zurück</p>
+          <p class="button" id="edit-button">Bearbeiten</p>
+        </div>
+        <div id="maps">
+          <div id="full-map"></div>
+        </div>
+        <div id="save-bar">
+          <p class="button hidden" id="save-button">Speichern</p>
+        </div>
+      </main>
+      <footer class="bar">
+        <p class="bar-text" id="copyright"></p>
+        <p class="bar-text">Rimolo13 and Mocbuilder</p>
+      </footer>
+    </div>
+  </body>
+</html>
