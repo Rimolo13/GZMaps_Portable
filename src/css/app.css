@@ -1,33 +1,26 @@
 :root {
-  --main: #008e5e;
+  --main: #193e37;
   --white: #fffffa;
   --black: #030300;
   --text-color: var(--white);
   --text-bar-color: var(--black);
   --background-color: color-mix(in srgb, var(--main) 5%, var(--white));
-  --background-second-color: color-mix(in srgb, var(--main) 30%, var(--white));
-  --bar-background-color: color-mix(in srgb, var(--main) 60%, var(--white));
-  --button-color: color-mix(in srgb, var(--main) 90%, var(--white));
-  --button-color-hover: color-mix(in srgb, var(--main) 70%, var(--white));
-  --houses-color: color-mix(in srgb, var(--main) 75%, var(--white));
-  --houses-color-hover: color-mix(in srgb, var(--main) 89%, var(--white));
-  --corridors-color: color-mix(in srgb, var(--main) 66%, var(--white));
-  --basements-color: color-mix(in srgb, var(--main) 80%, var(--white));
+  --background-second-color: color-mix(in srgb, var(--main) 35%, var(--white));
+  --background-third-color: color-mix(in srgb, var(--main) 65%, var(--white));
+  --interactive-color: color-mix(in srgb, var(--main) 85%, var(--white));
+  --interactive-color-hover: color-mix(in srgb, var(--main) 85%, var(--black));
+  --contrast-color: color-mix(in srgb, var(--main) 95%, var(--black));
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: rgb(0, 0, 0);
-    --background-second-color: rgb(35, 39, 31);
-    --text-highlight: rgb(230, 150, 0);
-    --text-bar-color: rgb(255, 255, 250);
-    --bar-background-color: rgb(37, 37, 33);
-    --button-color: rgb(6, 70, 50);
-    --button-color-hover: rgb(6, 30, 10);
-    --houses-color: rgb(3, 90, 70);
-    --houses-color-hover: rgb(3, 50, 30);
-    --corridors-color: rgb(30, 70, 50);
-    --basements-color: rgb(3, 75, 55);
+    --text-bar-color: var(--white);
+    --background-color: color-mix(in srgb, var(--main) 5%, var(--white));
+    --background-second-color: color-mix(in srgb, var(--main) 35%, var(--white));
+    --background-third-color: color-mix(in srgb, var(--main) 65%, var(--white));
+    --interactive-color: color-mix(in srgb, var(--main) 85%, var(--white));
+    --interactive-color-hover: color-mix(in srgb, var(--main) 85%, var(--black));
+    --contrast-color: color-mix(in srgb, var(--main) 95%, var(--black));
   }
 }
 
@@ -39,7 +32,7 @@
     "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif, Times, serif;
   color: var(--text-color);
-  font-size: 1.05em;
+  font-size: clamp(16px, 2vw, 32px);
   font-weight: bolder;
   text-align: center;
   transition: all 0.3s;
