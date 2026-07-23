@@ -73,7 +73,7 @@ body {
 
 .bar {
   display: flex;
-  background: var(--background-third-color);
+  background: linear-gradient(90deg, var(--background-third-color) 0%, var(--background-second-color) 50%, var(--background-third-color) 100%);
   flex-direction: row;
   justify-content: center;
   align-items: center;
