@@ -7,4 +7,4 @@ No external libraries are used
 
 ## How to Use
 Just clicking on the HTML or use the GitHub Page:
-[GZMaps](https://rimolo13.github.io/GZMaps-Portable/)
+[GZMaps](https://rimolo13.github.io/GZMaps_Portable/)
