@@ -1,7 +1,4 @@
 @media (orientation: portrait) {
-  .bar {
-    flex-direction: column;
-  }
 }
 
 #app {
@@ -14,11 +11,25 @@
 
 .bar {
   display: flex;
-  height: 5rem;
+  height: 3rem;
   background: linear-gradient(90deg, var(--background_third_color) 0%, var(--background_second_color) 50%, var(--background_third_color) 100%);
-  flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+
+.bar ul {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
   align-items: center;
+}
+
+.bar ul:first-child {
+  margin-left: 1rem;
+}
+
+.bar ul ul {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr;
 }
 
 .logo {
@@ -38,8 +49,8 @@
 #color_setting {
   background: #005e3e;
   border-radius: 1rem;
-  height: 2rem;
-  width: 2rem;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .content {
