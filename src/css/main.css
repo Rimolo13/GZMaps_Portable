@@ -4,7 +4,7 @@
   --black: #030300;
   --text_color: var(--white);
   --text_second_color: var(--black);
-  --background_color: color-mix(in srgb, var(--main) 5%, var(--white));
+  --background_first_color: color-mix(in srgb, var(--main) 5%, var(--white));
   --background_second-color: color-mix(in srgb, var(--main) 35%, var(--white));
   --background_third-color: color-mix(in srgb, var(--main) 65%, var(--white));
   --interactive_color: color-mix(in srgb, var(--main) 85%, var(--white));
@@ -15,7 +15,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --text_second_color: var(--white);
-    --background_color: color-mix(in srgb, var(--main) 5%, var(--black));
+    --background_first_color: color-mix(in srgb, var(--main) 5%, var(--black));
     --background_second_color: color-mix(in srgb, var(--main) 35%, var(--black));
     --background_third_color: color-mix(in srgb, var(--main) 65%, var(--black));
     --interactive_color: color-mix(in srgb, var(--main) 85%, var(--black));
@@ -56,10 +56,6 @@ body {
 .hidden {
   opacity: 0;
   pointer-events: none;
-}
-
-.headline {
-  font-size: 1.05rem;
 }
 
 .auto_animation {
