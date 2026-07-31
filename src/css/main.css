@@ -5,10 +5,10 @@
   --text_color: var(--white);
   --text_second_color: var(--black);
   --background_first_color: color-mix(in srgb, var(--main) 5%, var(--white));
-  --background_second-color: color-mix(in srgb, var(--main) 35%, var(--white));
-  --background_third-color: color-mix(in srgb, var(--main) 65%, var(--white));
+  --background_second_color: color-mix(in srgb, var(--main) 35%, var(--white));
+  --background_third_color: color-mix(in srgb, var(--main) 65%, var(--white));
   --interactive_color: color-mix(in srgb, var(--main) 85%, var(--white));
-  --interactive_color-hover: color-mix(in srgb, var(--main) 85%, var(--black));
+  --interactive_color_hover: color-mix(in srgb, var(--main) 85%, var(--black));
   --contrast_color: color-mix(in srgb, var(--main) 95%, var(--black));
 }
 
@@ -27,12 +27,13 @@
 * {
   margin: 0px;
   padding: 0px;
+  max-width: 100dvw;
   list-style: none;
+  color: var(--text_color);
   font-family:
     "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif, Times, serif;
-  color: var(--text_color);
-  font-size: clamp(1rem, 0.5rem + 1.5vw, 2.5rem);
+  font-size: clamp(1rem, 0.5rem + 1.5vw, 2rem);
   font-weight: bolder;
   text-align: center;
   overflow: hidden;
@@ -58,6 +59,11 @@ body {
   pointer-events: none;
 }
 
-.auto_animation {
-  transition: all 0.3s;
+.headline {
+  color: var(--text_second_color);
+  transition: color 0.3s;
+}
+
+.normal_text * {
+  font-size: 0.75rem;
 }
