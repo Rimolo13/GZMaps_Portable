@@ -67,3 +67,22 @@ body {
 .normal_text * {
   font-size: 0.75rem;
 }
+
+.button {
+  display: grid;
+  height: 2em;
+  width: 80%;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+  align-items: center;
+  border: 0.05rem solid var(--interactive_color_hover);
+  border-radius: 0.15rem;
+  background: var(--interactive_color);
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  border: 0.05rem solid var(--interactive_color);
+  background: var(--interactive_color_hover);
+}

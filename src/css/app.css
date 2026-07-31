@@ -62,13 +62,22 @@ header {
 
 .content_container {
   display: grid;
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  height: 70%;
+  padding: 1rem;
+  justify-items: center;
   border: 0.05rem solid var(--contrast_color);
   border-radius: 0.5rem;
   background: radial-gradient(var(--background_second_color), var(--background_third_color));
   box-shadow: 0rem 0rem 1rem 0.5rem var(--background_second_color);
   z-index: 0;
+}
+
+.button_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
 }
 
 .map {
@@ -85,7 +94,6 @@ header {
 
 .house {
   display: grid;
-  justify-content: center;
   align-items: center;
   border: 0.05rem solid var(--interactive_color_hover);
   border-radius: 0.15rem;
