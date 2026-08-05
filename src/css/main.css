@@ -71,7 +71,7 @@ body {
 .button {
   display: grid;
   height: 2em;
-  width: 80%;
+  width: 95%;
   margin-top: 0.1rem;
   margin-bottom: 0.1rem;
   align-items: center;
