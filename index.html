@@ -4,10 +4,8 @@
     <title>GZMaps - Gesamte Karte</title>
     <link rel="icon" href="./src/res/icon/favicon.svg">
     <link rel="canonical" href="https://rimolo13.github.io/GZMaps-Portable/" />
-    <link rel="stylesheet" href="./src/css/setting.css" >
     <link rel="stylesheet" href="./src/css/app.css" >
     <link rel="stylesheet" href="./src/css/main.css" >
-    <script type="module" src="./src/js/setting.js" ></script>
     <script type="module" src="./src/js/app.js" ></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,60 +14,70 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="GZMaps" />
     <meta property="og:description" content="Eine Karte von einer Firma." />
-    <meta property="og:image" content="https://rimolo13.github.io/GZMaps-Portable/src/favicon.png" />
-    <meta property="og:url" content="https://rimolo13.github.io/GZMaps-Portable/" />
+    <meta property="og:image" content="https://rimolo13.github.io/GZMaps_Portable/src/favicon.png" />
+    <meta property="og:url" content="https://rimolo13.github.io/GZMaps_Portable/" />
     <meta property="og:site_name" content="GZMaps" />
   </head>
   <body>
-    <div id="setting"></div>
     <div id="app">
       <header class="bar">
-        <p class="headline logo">GZMaps</p>
-        <p class="headline" id="headline_map_status">Gesamte Karte</p>
+        <ul>
+          <li class="headline logo">GZMaps</li>
+          <li class="headline" id="headline_map_status">Gesamte Karte</li>
+          <li><button class="login" id="login"></button></li>
+        </ul>
       </header>
       <main class="content normal_text">
-        <div class="content_container">
-          <div class="button_container">
-            <p class="button">Zurück</p>
-            <p class="button">Bearbeiten</p>
-            <p class="button">Speichern</p>
-          </div>
-          <div class="search_container">
+        <aside class="content_container">
+          <menu class="button_container">
+            <li><button class="button">Zurück</button></li>
+            <li><button class="button">Bearbeiten</button></li>
+            <li><button class="button">Speichern</button></li>
+          </menu>
+          <search class="search_container">
             <input type="text" placeholder="Wonach suchst du?">
-            <div class="search_result_container"></div>
-          </div>
-          <div class="floor_view_container">
-            <p class="floor_view" id="floor_view_u">U</p>
-            <p class="floor_view" id="floor_view_e">E</p>
-            <p class="floor_view" id="floor_view_1">1</p>
-            <p class="floor_view" id="floor_view_2">2</p>
-            <p class="floor_view" id="floor_view_3">3</p>
-            <p class="floor_view" id="floor_view_4">4</p>
-          </div>
-        </div>
-        <div class="map">
+            <ul class="search_result_container"></ul>
+          </search>
+          <menu class="floor_view_container">
+            <li><button class="floor_view" id="floor_view_u">U</button></li>
+            <li><button class="floor_view" id="floor_view_e">E</button></li>
+            <li><button class="floor_view" id="floor_view_1">1</button></li>
+            <li><button class="floor_view" id="floor_view_2">2</button></li>
+            <li><button class="floor_view" id="floor_view_3">3</button></li>
+            <li><button class="floor_view" id="floor_view_4">4</button></li>
+          </menu>
+        </aside>
+        <main class="map">
           <div id="full_map">
-            <p class="house" id="house_1">1</p>
-            <p class="house" id="house_2">2</p>
-            <p class="house" id="house_3">3</p>
-            <p class="house" id="house_4">4</p>
-            <p class="house" id="house_5">5</p>
-            <p class="house" id="house_6">6</p>
-            <p class="house" id="house_8">8</p>
-            <p class="house" id="house_11">11</p>
-            <p class="corridor" id="corridor_1"></p>
-            <p class="corridor" id="corridor_2"></p>
-            <p class="corridor" id="corridor_3"></p>
+            <button class="house" id="house_1">1</button>
+            <button class="house" id="house_2">2</button>
+            <button class="house" id="house_3">3</button>
+            <button class="house" id="house_4">4</button>
+            <button class="house" id="house_5">5</button>
+            <button class="house" id="house_6">6</button>
+            <button class="house" id="house_8">8</button>
+            <button class="house" id="house_11">11</button>
+            <span class="corridor" id="corridor_1"></span>
+            <span class="corridor" id="corridor_2"></span>
+            <span class="corridor" id="corridor_3"></span>
           </div>
-        </div>
-        <div class="content_container"></div>
+        </main>
+        <aside class="content_container">
+          <ul></ul>
+        </aside>
       </main>
       <footer class="bar">
-          <p id="color_setting"></p>
-          <div id="copyright">
-            <p class="headline" id="copyright_date">©2026 </p>
-            <p class="headline">Rimolo13 & Mocbuilder</p>
-          </div>
+        <ul>
+          <li>
+            <input type="color" id="color_setting">
+          </li>
+          <li>
+            <ul id="copyright">
+              <li class="headline" id="copyright_date">©2026 </li>
+              <li class="headline">Rimolo13 & Mocbuilder</li>
+            </ul>
+          </li>
+        </ul>
       </footer>
     </div>
   </body>
