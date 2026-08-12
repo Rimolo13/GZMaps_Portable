@@ -73,13 +73,7 @@ body {
   font-size: 0.90rem;
 }
 
-.button {
-  display: grid;
-  height: 2em;
-  width: 100%;
-  margin-top: 0.1rem;
-  margin-bottom: 0.1rem;
-  align-items: center;
+button {
   border: 0.05rem solid var(--interactive_color_hover);
   border-radius: 0.15rem;
   background: var(--interactive_color);
@@ -87,8 +81,17 @@ body {
   cursor: pointer;
 }
 
-.button:focus,
-.button:hover {
+button:focus,
+button:hover {
   border: 0.05rem solid var(--interactive_color);
   background: var(--interactive_color_hover);
+}
+
+.button {
+  display: grid;
+  height: 2em;
+  width: 100%;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+  align-items: center; 
 }

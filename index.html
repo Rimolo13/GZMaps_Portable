@@ -21,7 +21,7 @@
   <body>
     <div id="app">
       <header class="bar">
-        <ul>
+        <ul class="bar_list">
           <li class="headline logo">GZMaps</li>
           <li class="headline" id="headline_map_status">Gesamte Karte</li>
           <li><button class="login" id="login"></button></li>
@@ -35,8 +35,8 @@
             <li><button class="button">Speichern</button></li>
           </menu>
           <search class="search_container">
-            <input type="text" placeholder="Wonach suchst du?">
-            <ul class="search_result_container"></ul>
+              <input type="text" placeholder="Suche hier" id="search_bar">
+              <ul id="search_result_container"></ul>
           </search>
           <menu class="floor_view_container">
             <li><button class="floor_view" id="floor_view_u">U</button></li>
@@ -67,9 +67,9 @@
         </aside>
       </main>
       <footer class="bar">
-        <ul>
+        <ul class="bar_list">
           <li>
-            <input type="color" id="color_setting">
+            <input type="color" class="bar_first_child" id="color_setting">
           </li>
           <li>
             <ul id="copyright">
@@ -77,6 +77,7 @@
               <li class="headline">Rimolo13 & Mocbuilder</li>
             </ul>
           </li>
+          <li></li>
         </ul>
       </footer>
     </div>
