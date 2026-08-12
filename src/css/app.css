@@ -249,6 +249,7 @@ footer {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: center;
+  align-items: center;
 }
 
 #copyright li {
