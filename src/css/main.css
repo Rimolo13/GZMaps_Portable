@@ -51,7 +51,7 @@ body {
   background: var(--background_color);
 }
 
-.not-displayed {
+.not_displayed {
   display: none !important;
 }
 
@@ -89,5 +89,5 @@ button:hover {
   width: 100%;
   margin-top: 0.1rem;
   margin-bottom: 0.1rem;
-  align-items: center; 
+  align-content: center; 
 }
