@@ -51,7 +51,7 @@ body {
   background: var(--background_color);
 }
 
-.not_displayed {
+.notDisplayed {
   display: none !important;
 }
 
@@ -65,7 +65,7 @@ body {
   transition: color 0.3s;
 }
 
-.normal_text * {
+.normalText * {
   font-size: clamp(16px, 0.25rem + 1vw, 1.5rem);
 }
 
