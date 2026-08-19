@@ -23,44 +23,63 @@
       <header class="bar">
         <ul class="barList">
           <li class="headline logo">GZMaps</li>
-          <li class="headline" id="HeadlineMapStatus">Gesamte Karte</li>
+          <li id="HeadlineMapStatus" class="headline">Gesamte Karte</li>
           <li><button id="Login"></button></li>
         </ul>
       </header>
       <main class="content normalText">
         <aside class="contentContainer">
           <menu class="buttonContainer">
-            <li><button class="button notDisplayed">Zurück</button></li>
-            <li><button class="button notDisplayed">Bearbeiten</button></li>
-            <li><button class="button notDisplayed">Speichern</button></li>
+            <li><button id="ButtonBack" class="button notDisplayed">Zurück</button></li>
+            <li><button id="ButtonEdit" class="button notDisplayed">Bearbeiten</button></li>
+            <li><button id="ButtonSave" class="button notDisplayed">Speichern</button></li>
           </menu>
           <search class="searchContainer">
-              <input type="text" placeholder="Suche hier" id="SearchBar">
+              <input id="SearchBar" type="text" placeholder="Suche hier">
               <ul id="SearchResultContainer"></ul>
           </search>
           <menu class="floorViewContainer">
-            <li><button class="floorView" id="FloorView_u">U</button></li>
-            <li><button class="floorView" id="FloorView_e">E</button></li>
-            <li><button class="floorView" id="FloorView_1">1</button></li>
-            <li><button class="floorView" id="FloorView_2">2</button></li>
-            <li><button class="floorView" id="FloorView_3">3</button></li>
-            <li><button class="floorView" id="FloorView_4">4</button></li>
+            <li><button id="FloorView_u" class="floorView">U</button></li>
+            <li><button id="FloorView_e" class="floorView">E</button></li>
+            <li><button id="FloorView_1" class="floorView">1</button></li>
+            <li><button id="FloorView_2" class="floorView">2</button></li>
+            <li><button id="FloorView_3" class="floorView">3</button></li>
+            <li><button id="FloorView_4" class="floorView">4</button></li>
           </menu>
         </aside>
         <main class="map">
-          <div id="FullMap">
-            <button class="house" id="house_1">1</button>
-            <button class="house" id="house_2">2</button>
-            <button class="house" id="house_3">3</button>
-            <button class="house" id="house_4">4</button>
-            <button class="house" id="house_5">5</button>
-            <button class="house" id="house_6">6</button>
-            <button class="house" id="house_8">8</button>
-            <button class="house" id="house_11">11</button>
-            <span class="corridor" id="corridor_1"></span>
-            <span class="corridor" id="corridor_2"></span>
-            <span class="corridor" id="corridor_3"></span>
+          <div id="FullMap" class="notDisplayed">
+            <button id="house_1" class="house">1</button>
+            <button id="house_2" class="house">2</button>
+            <button id="house_3" class="house">3</button>
+            <button id="house_4" class="house">4</button>
+            <button id="house_5" class="house">5</button>
+            <button id="house_6" class="house">6</button>
+            <button id="house_8" class="house">8</button>
+            <button id="house_11" class="house">11</button>
+            <span id="corridor_1" class="corridor"></span>
+            <span id="corridor_2" class="corridor"></span>
+            <span id="corridor_3" class="corridor"></span>
           </div>
+          <div id="HouseMap_1" class="normalMap">
+            <input class="mapInput" type="Text" placeholder="1" readonly=true autocomplete="off">
+            <input class="mapInput" type="Text" placeholder="2" readonly=true autocomplete="off">
+            <input class="mapInput" type="Text" placeholder="3" readonly=true autocomplete="off">
+            <input class="mapInput" type="Text" placeholder="4" readonly=true autocomplete="off">
+            <input class="mapInput" type="Text" placeholder="5" readonly=true autocomplete="off">
+            <input class="mapInput" type="Text" placeholder="6" readonly=true autocomplete="off">
+            <input class="mapInput" type="Text" placeholder="7" readonly=true autocomplete="off">
+            <input class="mapInput" type="Text" placeholder="8" readonly=true autocomplete="off">
+            <input class="mapInput" type="Text" placeholder="9" readonly=true autocomplete="off">
+            <input class="mapInput" type="Text" placeholder="10" readonly=true autocomplete="off">
+          </div>
+          <div id="HouseMap_2" class="normalMap notDisplayed"></div>
+          <div id="HouseMap_3" class="normalMap notDisplayed"></div>
+          <div id="HouseMap_4" class="normalMap notDisplayed"></div>
+          <div id="HouseMap_5" class="normalMap notDisplayed"></div>
+          <div id="HouseMap_6" class="normalMap notDisplayed"></div>
+          <div id="HouseMap_8" class="normalMap notDisplayed"></div>
+          <div id="HouseMap_11" class="normalMap notDisplayed"></div>
         </main>
         <aside class="contentContainer">
           <ul></ul>
@@ -72,8 +91,8 @@
             <input type="color" id="ColorSetting">
           </li>
           <li>
-            <ul class="normalText" id="Copyright">
-              <li class="headline" id="CopyrightDate">©2026 </li>
+            <ul id="Copyright" class="normalText">
+              <li id="CopyrightDate" class="headline">©2026 </li>
               <li class="headline">Rimolo13 & Mocbuilder</li>
             </ul>
           </li>
