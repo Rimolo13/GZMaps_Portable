@@ -179,6 +179,8 @@ header {
 
 #FullMap {
   display: grid;
+  height: 97%;
+  width: 97%;
   grid-template-columns: repeat(30, 1fr);
   grid-template-rows: repeat(30, 1fr);
 }
